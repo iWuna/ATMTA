@@ -14,7 +14,7 @@
 		else
 			message1 = "CARGO"
 			message2 = shuttle_master.supply.getTimerStr()
-			if(lentext(message2) > CHARS_PER_LINE)
+			if(length(message2) > CHARS_PER_LINE)
 				message2 = "Error"
 
 		update_display(message1, message2)

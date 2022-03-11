@@ -495,7 +495,7 @@
 			SSnanoui.update_uis(src)
 			return 1
 
-		var/index = copytext(href_list["doorder"], 1, lentext(href_list["doorder"])) //text2num(copytext(href_list["doorder"], 1))
+		var/index = copytext(href_list["doorder"], 1, length(href_list["doorder"])) //text2num(copytext(href_list["doorder"], 1))
 		var/multi = text2num(copytext(href_list["doorder"], -1))
 		if(!isnum(multi))
 			return 1
@@ -676,7 +676,7 @@
 			SSnanoui.update_uis(src)
 			return 1
 
-		var/index = copytext(href_list["doorder"], 1, lentext(href_list["doorder"])) //text2num(copytext(href_list["doorder"], 1))
+		var/index = copytext(href_list["doorder"], 1, length(href_list["doorder"])) //text2num(copytext(href_list["doorder"], 1))
 		var/multi = text2num(copytext(href_list["doorder"], -1))
 		if(!isnum(multi))
 			return 1

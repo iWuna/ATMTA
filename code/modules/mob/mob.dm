@@ -543,11 +543,11 @@ var/list/slot_equipment_priority = list( \
 			client.screen = list()
 			hud_used.show_hud(hud_used.hud_version)
 
-/mob/setDir(new_dir)	
+/mob/setDir(new_dir)
 	if(forced_look)
 		if(isnum(forced_look))
 			dir = forced_look
-		else 
+		else
 			var/atom/A = locateUID(forced_look)
 			if(istype(A))
 				dir = get_cardinal_dir(src, A)
@@ -723,7 +723,7 @@ var/list/slot_equipment_priority = list( \
 /mob/proc/print_flavor_text(var/shrink = 1)
 	if(flavor_text && flavor_text != "")
 		var/msg = replacetext(flavor_text, "\n", " ")
-		if(lentext(msg) <= 40 || !shrink)
+		if(length(msg) <= 40 || !shrink)
 			return "<span class='notice'>[lhtml_encode(msg)]</span>" //Repeat after me, "I will not give players access to decoded HTML."
 		else
 			return "<span class='notice'>[copytext_preserve_html(msg, 1, 37)]... <a href='byond://?src=[UID()];flavor_more=1'>More...</a></span>"
